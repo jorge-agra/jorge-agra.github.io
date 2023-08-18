@@ -1,0 +1,43 @@
+@top Expression { Prove Wff }
+
+@skip { space }
+
+@precedence { cenas @left }
+
+Prove { C006 }
+
+Wff {
+  F_A
+  | F_B
+  | F_C
+  | A_wng
+  | A_wim 
+}
+
+F_A { V001 } 
+F_B { V002 } 
+F_C { V003 } 
+A_wng { C004 Wff }
+A_wim { C002 Wff C005 Wff C003 }
+
+
+@tokens {
+
+  C001 { 'wff' }
+  C002 { '(' }
+  C003 { ')' }
+  C004 { '!' }
+  C005 { '->' }
+  C006 { '|-' }
+
+  V001 { 'A' }
+  V002 { 'B' }
+  V003 { 'C' }
+
+  Constant { C001 | C002 | C003 | C004 }
+  Variable { V001 | V002 | V003 }
+
+  space { $[ \t\n\r]+ }
+}
+
+@detectDelim

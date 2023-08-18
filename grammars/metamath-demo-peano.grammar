@@ -1,0 +1,60 @@
+@top Expression { Prove Wff }
+
+@skip { space }
+
+@precedence { cenas @left }
+
+Wff {
+  Variable
+  | !cenas C001 Wff !cenas C002
+  | Wff !cenas TYP_BINOP Wff
+  | Wff !cenas TYP_LOGBINOP Wff
+  | Wff !cenas TYP_BINPRED Wff
+  | C007 Wff
+  | C009 Wff
+  | TYP_QUANT Variable Wff
+}
+
+TYP_QUANT { C010 | C011 | C017 }
+TYP_BINPRED { C004 | C013 | C014 }
+TYP_BINOP { C005 | C015 | C016 }
+TYP_LOGBINOP { C003 | C006 | C008 | C012 | C018 }
+TYP_TERM { C019 | C009 }
+
+//QUANT { C010 | C011 }
+//LOGBINOP { C003 | C008 | C012 | C006 }
+
+@tokens {
+
+  Prove { '|-' }
+  C001 { '(' }
+  C002 { ')' }
+  C003 { '->' }
+  C004 { '=' }
+  C005 { '+' }
+  C006 { '/\\' }
+  C007 { 'not' }
+  C008 { '<=>' } // iff
+  C009 { 'S' }
+  C010 { 'forall' }
+  C011 { 'exists' } 
+  C012 { '\\/' }
+  C013 { '<' }
+  C014 { 'binpred' }
+  C015 { '*' }
+  C016 { 'binop' }
+  C017 { 'quant' }
+  C018 { 'logbinop' }
+  C019 { '0' }
+
+  V_BINPRED { C014 }
+
+  //  Syntax { 'wff' | 'term' | 'var' }
+  Variable { 's' | 's0' | 's1' | 't' | 't0' | 't1' | 'u' | 'v' | 'x' | 'y' | 'z' | 'phi' | 'psi' | 'chi' | V_BINPRED }
+
+
+
+  space { $[ \t\n\r]+ }
+}
+
+@detectDelim

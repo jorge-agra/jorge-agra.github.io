@@ -1,0 +1,74 @@
+@top Program { statement* }
+
+@skip { space | BlockComment | LineComment }
+
+statement {
+  Constants { ConstantStart (Identifier|Symbol)* StatementEnd }
+  | Variables { VariableStart Identifier* StatementEnd }
+  | Declaration { Identifier DeclarationStart Identifier Identifier StatementEnd }
+  | Axiom { Identifier AxiomStart (Identifier|Symbol)* StatementEnd }
+  | Proof {  proofHead proofSteps StatementEnd }
+  | Hypothesis {  Identifier HypStart (Identifier|Symbol)* StatementEnd }
+  | block
+}
+
+block {
+  Block { BlockStart statement* BlockEnd }
+}
+
+proofHead {
+  ProofHead { Identifier ProofStart (Identifier|Symbol)* }
+}
+
+proofSteps {
+  ProofStepsStart (unproovedProof | directProof | compressedProof | uncompressedProof) 
+}
+
+unproovedProof {
+  QuestionMark
+}
+
+directProof {
+
+}
+
+compressedProof {
+  ProofCompressed { LeftParens (Identifier)+ RightParens Identifier+ } 
+}
+
+uncompressedProof {
+
+}
+
+@tokens {
+
+  ConstantStart { "$c" }
+  VariableStart { "$v" }
+  DeclarationStart { "$f" }
+  AxiomStart { "$a" }
+  ProofStart { "$p" }
+  ProofStepsStart { "$=" }
+  HypStart { "$e" }
+  BlockStart { "${" }
+  BlockEnd { "$}" }
+
+  StatementEnd { "$." }
+
+  QuestionMark { "?" }
+
+  Identifier { $[a-zA-Z]+ (("-" | ".")*  $[a-zA-Z0-9]+)* }
+
+  LeftParens { "(" }
+  RightParens { ")" }
+  Symbol { ("!" | LeftParens | RightParens | "-" | "=" | ">" | "|" | "?" | "\\" | ":" | "." | "[" | "]" | ";" | "," | "+" | "*" | "/" )+ }
+
+  LineComment { "$$" ![\n]* }
+  
+  BlockComment { "$(" blockCommentRest }
+  blockCommentRest { ![$] blockCommentRest | "$" blockCommentAfterStar }
+  blockCommentAfterStar { ")" | "$" blockCommentAfterStar | ![)$] blockCommentRest }
+
+  space { $[ \t\n\r]+ }
+}
+
+@detectDelim

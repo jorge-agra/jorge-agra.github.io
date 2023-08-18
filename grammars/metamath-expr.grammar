@@ -1,0 +1,40 @@
+@top Expression { terms* }
+
+@skip { space }
+
+terms {
+  wff { Wff | Class }
+}
+
+@tokens {
+
+  ConstantStart { "$c" }
+  VariableStart { "$v" }
+  DeclarationStart { "$f" }
+  AxiomStart { "$a" }
+  ProofStart { "$p" }
+  ProofStepsStart { "$=" }
+  HypStart { "$e" }
+  BlockStart { "${" }
+  BlockEnd { "$}" }
+
+  StatementEnd { "$." }
+
+  QuestionMark { "?" }
+
+  Identifier { $[a-zA-Z]+ (("-" | ".")*  $[a-zA-Z0-9]+)* }
+
+  LeftParens { "(" }
+  RightParens { ")" }
+  Symbol { ("!" | LeftParens | RightParens | "-" | "=" | ">" | "|" | "?" | "\\" | ":" | "." | "[" | "]" | ";" | "," | "+" | "*" | "/" )+ }
+
+  LineComment { "$$" ![\n]* }
+  
+  BlockComment { "$(" blockCommentRest }
+  blockCommentRest { ![$] blockCommentRest | "$" blockCommentAfterStar }
+  blockCommentAfterStar { ")" | "$" blockCommentAfterStar | ![)$] blockCommentRest }
+
+  space { $[ \t\n\r]+ }
+}
+
+@detectDelim
