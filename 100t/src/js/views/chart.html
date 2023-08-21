@@ -1,0 +1,42 @@
+                  
+<div id="chart-container">
+  <oj-toolbar
+    id="buttonToolbar"
+    chroming="outlined"
+    aria-label="Chart Update Button Toolbar"
+    aria-controls="comboChart">
+    <oj-button id="button1" on-oj-action="[[updateButtonClick]]">Update values</oj-button>
+    <oj-button id="button2" on-oj-action="[[seriesButtonClick]]">Add/Remove Series</oj-button>
+    <oj-button id="button3" on-oj-action="[[groupButtonClick]]">Add/Remove Group</oj-button>
+  </oj-toolbar>
+  <oj-chart
+    id="comboChart"
+    type="bar"
+    orientation="[[orientationValue]]"
+    stack="[[stackValue]]"
+    data="[[dataProvider]]"
+    animation-on-display="auto"
+    animation-on-data-change="auto">
+    <template slot="itemTemplate" data-oj-as="item">
+      <oj-chart-item
+        value="[[item.data.value]]"
+        group-id="[[ [item.data.group] ]]"
+        series-id="[[item.data.series]]"></oj-chart-item>
+    </template>
+  </oj-chart>
+  <oj-toolbar id="myToolbar" aria-label="Chart Display Options Toolbar" aria-controls="comboChart">
+    <!-- vertical/horizontal toggle button -->
+    <demo-chart-orientation-control
+      id="orientationControl"
+      type="combo"
+      focus-management="none"
+      orientation="{{orientationValue}}"></demo-chart-orientation-control>
+    <span role="separator" aria-orientation="vertical" class="oj-toolbar-separator"></span>
+    <!-- unstacked/stacked toggle button -->
+    <demo-chart-stack-control
+      id="stackControl"
+      type="combo"
+      focus-management="none"
+      stack="{{stackValue}}"></demo-chart-stack-control>
+  </oj-toolbar>
+</div>

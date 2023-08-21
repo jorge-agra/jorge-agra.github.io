@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "series": "Metamath",
+      "group": "Jan23",
+      "value": 1
+    },
+    {
+      "id": 2,
+      "series": "Isabelle",
+      "group": "Jan23",
+      "value": 1
+    },
+    {
+      "id": 3,
+      "series": "HOL Light",
+      "group": "Jan23",
+      "value": 1
+    },
+    {
+      "id": 4,
+      "series": "Coq",
+      "group": "Jan23",
+      "value": 1
+    },
+    {
+      "id": 5,
+      "series": "Lean",
+      "group": "Jan23",
+      "value": 1
+    },
+    {
+      "id": 10,
+      "series": "Metamath",
+      "group": "Fev23",
+      "value": 1
+    },
+    {
+      "id": 11,
+      "series": "Isabelle",
+      "group": "Fev23",
+      "value": 1
+    },
+    {
+      "id": 12,
+      "series": "HOL Light",
+      "group": "Fev23",
+      "value": 1
+    },
+    {
+      "id": 13,
+      "series": "Coq",
+      "group": "Fev23",
+      "value": 1
+    },
+    {
+      "id": 14,
+      "series": "Lean",
+      "group": "Fev23",
+      "value": 1
+    },
+    {
+      "id": 30,
+      "series": "Metamath",
+      "group": "Mar23",
+      "value": 0
+    },
+    {
+      "id": 31,
+      "series": "Isabelle",
+      "group": "Mar23",
+      "value": 1
+    },
+    {
+      "id": 32,
+      "series": "HOL Light",
+      "group": "Mar23",
+      "value": 1
+    },
+    {
+      "id": 33,
+      "series": "Coq",
+      "group": "Mar23",
+      "value": 1
+    },
+    {
+      "id": 34,
+      "series": "Lean",
+      "group": "Mar23",
+      "value": 2
+    },
+    {
+      "id": 40,
+      "series": "Metamath",
+      "group": "Apr23",
+      "value": 1
+    },
+    {
+      "id": 41,
+      "series": "Isabelle",
+      "group": "Apr23",
+      "value": 2
+    },
+    {
+      "id": 42,
+      "series": "HOL Light",
+      "group": "Apr23",
+      "value": 2
+    },
+    {
+      "id": 43,
+      "series": "Coq",
+      "group": "Apr23",
+      "value": 0
+    },
+    {
+      "id": 44,
+      "series": "Lean",
+      "group": "Apr23",
+      "value": 3
+    }
+]

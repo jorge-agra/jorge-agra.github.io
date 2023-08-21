@@ -1,0 +1,2 @@
+define(['exports', '../LinkStyles.css', './LinkBaseTheme.css', './LinkVariants.css', 'module', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,t,a,i,n,l,c){"use strict";const r={baseTheme:t.baseTheme,multiVariantStyles:a.multiVariantStyles,variants:s.variants,styles:s.styles};e.LinkStableTheme=r,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=LinkTheme.js.map

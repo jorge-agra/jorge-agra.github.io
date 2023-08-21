@@ -1,0 +1,2 @@
+define(['exports', '../WindowOverlayStyles.css', './WindowOverlayBaseTheme.css', './WindowOverlayVariants.css', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,t,a,l,i,n){"use strict";const r={baseTheme:t.baseTheme,multiVariantStyles:a.multiVariantStyles,variants:s.variants,styles:s.styles};e.WindowOverlayStableTheme=r,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=WindowOverlayTheme.js.map

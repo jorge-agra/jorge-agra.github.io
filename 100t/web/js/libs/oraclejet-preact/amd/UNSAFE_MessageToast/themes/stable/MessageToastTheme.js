@@ -1,0 +1,2 @@
+define(['exports', '../MessageToastStyles.css', './MessageToastBaseTheme.css', './MessageToastVariants.css', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,a,t,i,l,n){"use strict";const c={baseTheme:a.baseTheme,multiVariantStyles:t.multiVariantStyles,variants:s.variants};e.MessageToastStableTheme=c,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=MessageToastTheme.js.map

@@ -1,0 +1,34 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import 'oj-c/split-menu-button';
+
+import * as Stories from './split-menu-button.stories.ts';
+
+<Meta of={Stories} />
+
+# Split Menu Button
+
+The `oj-c-split-menu-button` component combines an action button and menu button.
+
+## Import
+
+```js
+//To typecheck the element APIs, import as below.
+import { CSplitMenuButtonElement } from 'oj-c/split-menu-button';
+
+//For the transpiled javascript to load the element's module, import as below
+import 'oj-c/split-menu-button';
+```
+
+## Usage
+
+Here's how to implement a basic `oj-c-split-menu-button`.
+
+<Canvas of={Stories.Basic}>
+  <Story of={Stories.Basic} height={350} />
+</Canvas>
+
+## Props
+
+Here are the properties for `oj-c-split-menu-button`. To try these, switch to canvas.
+
+<ArgTypes of="story" />

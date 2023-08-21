@@ -1,0 +1,2 @@
+define(['exports', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,a,t){"use strict";var s=t.createRuntimeFn({defaultClassName:"WindowOverlayStyles_baseStyle__d5jpag12",variantClassNames:{},defaultVariants:{},compoundVariants:[]});e.multiVariantStyles=s,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=WindowOverlayVariants.css.js.map

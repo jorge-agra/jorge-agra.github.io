@@ -1,0 +1,2 @@
+define(['exports', '../DialogStyles.css', './DialogBaseTheme.css', './DialogVariants.css', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,t,a,l,i,n){"use strict";const c={baseTheme:t.baseTheme,multiVariantStyles:a.multiVariantStyles,variants:s.variants,styles:s.styles};e.DialogStableTheme=c,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=DialogTheme.js.map

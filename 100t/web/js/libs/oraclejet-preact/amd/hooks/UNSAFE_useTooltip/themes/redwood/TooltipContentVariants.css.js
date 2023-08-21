@@ -1,0 +1,2 @@
+define(['exports', 'module', 'module', '../../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(t,a,e,i){"use strict";var s=i.createRuntimeFn({defaultClassName:"TooltipContentStyles_baseStyle__40ir7s2",variantClassNames:{variant:{tooltip:"TooltipContentVariants_multiVariantStyles_variant_tooltip__1ycsr170",datatip:"TooltipContentVariants_multiVariantStyles_variant_datatip__1ycsr171"}},defaultVariants:{},compoundVariants:[]});t.multiVariantStyles=s,Object.defineProperty(t,"__esModule",{value:!0})}));
+//# sourceMappingURL=TooltipContentVariants.css.js.map

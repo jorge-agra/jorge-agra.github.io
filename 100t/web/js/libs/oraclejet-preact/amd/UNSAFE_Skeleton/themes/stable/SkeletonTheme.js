@@ -1,0 +1,2 @@
+define(['exports', '../SkeletonStyles.css', './SkeletonBaseTheme.css', './SkeletonVariants.css', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,t,l,n,a,c){"use strict";const i={baseTheme:t.baseTheme,multiVariantStyles:l.multiVariantStyles,styles:s.styles};e.SkeletonStableTheme=i,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=SkeletonTheme.js.map

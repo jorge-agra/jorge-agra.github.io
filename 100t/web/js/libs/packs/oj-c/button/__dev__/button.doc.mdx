@@ -1,0 +1,33 @@
+import { ArgTypes, Canvas, Meta, Story } from '@storybook/blocks';
+import 'oj-c/button';
+import * as Stories from './button.stories.ts';
+
+<Meta of={Stories} />
+
+# Button
+
+The `oj-c-button` component is a push button.
+
+## Import
+
+```js
+//To typecheck the element APIs, import as below.
+import { CButtonElement } from 'oj-c/button';
+
+//For the transpiled javascript to load the element's module, import as below
+import 'oj-c/button';
+```
+
+## Usage
+
+Here's how to implement a basic `oj-c-button`.
+
+<Canvas of={Stories.Basic}>
+  <Story of={Stories.Basic} height={350} />
+</Canvas>
+
+## Props
+
+Here are the properties for `oj-c-button`. To try these, switch to canvas.
+
+<ArgTypes of="story" />

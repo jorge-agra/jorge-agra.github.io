@@ -1,0 +1,32 @@
+import { ArgTypes, ArgsTable, Canvas, Meta, Story } from '@storybook/blocks';
+import 'oj-c/input-text';
+
+import * as Stories from './input-text.stories.ts';
+
+<Meta of={Stories} />
+
+# Input Text
+
+The `oj-c-input-text` component enhances a browser input type="text" element.
+
+## Import
+
+```js
+//To typecheck the element APIs, import as below.
+import { CInputTextElement } from 'oj-c/input-text';
+
+//For the transpiled javascript to load the element's module, import as below
+import 'oj-c/input-text';
+```
+
+## Usage
+
+Here's how to implement a basic `oj-c-input-text`.
+
+<Canvas of={Stories.Basic}>
+  <Story of={Stories.Basic} height={150} />
+</Canvas>
+
+## Props
+
+<ArgTypes of="story" />

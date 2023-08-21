@@ -1,0 +1,2 @@
+define(['exports', '../BadgeStyles.css', './BadgeThemeBaseTheme.css', './BadgeVariants.css', 'module', 'module', 'module', '../../../vanilla-extract-recipes-createRuntimeFn.esm-6f6e2b8d'], (function(e,s,a,t,l,i,n,c){"use strict";const r={baseTheme:a.baseTheme,multiVariantStyles:t.multiVariantStyles,variants:s.variants,styles:s.styles};e.BadgeStableTheme=r,Object.defineProperty(e,"__esModule",{value:!0})}));
+//# sourceMappingURL=BadgeTheme.js.map

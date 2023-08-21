@@ -1,0 +1,68 @@
+[
+    {
+      "id": 2,
+      "series": "Isabelle",
+      "group": "2023",
+      "value": 87
+    },
+    {
+      "id": 3,
+      "series": "HOL Light",
+      "group": "2023",
+      "value": 87
+    },
+    {
+      "id": 4,
+      "series": "Coq",
+      "group": "2023",
+      "value": 79
+    },
+    {
+      "id": 5,
+      "series": "Lean",
+      "group": "2023",
+      "value": 74
+    },
+    {
+      "id": 1,
+      "series": "Metamath",
+      "group": "2023",
+      "value": 74
+    },
+    {
+      "id": 6,
+      "series": "Mizar",
+      "group": "2023",
+      "value": 69
+    },
+    {
+      "id": 7,
+      "series": "ProofPower",
+      "group": "2023",
+      "value": 43
+    },
+    {
+      "id": 10,
+      "series": "PVS",
+      "group": "2023",
+      "value": 26
+    },
+    {
+      "id": 8,
+      "series": "nqthm/ACL2",
+      "group": "2023",
+      "value": 23
+    },
+    {
+      "id": 9,
+      "series": "NuPRL/MetaPRL",
+      "group": "2023",
+      "value": 8
+    },
+    {
+      "id": 10,
+      "series": "PVS",
+      "group": "2023",
+      "value": 26
+    }
+]

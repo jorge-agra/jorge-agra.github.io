@@ -1,0 +1,31 @@
+import { ArgTypes, ArgsTable, Canvas, Meta, Story } from '@storybook/blocks';
+import 'oj-c/select-single';
+import * as Stories from './select-single.stories.ts';
+
+<Meta of={Stories} />
+
+# Select Single
+
+The `oj-c-select-single` component provides support for multi-select and search filtering.
+
+## Import
+
+```js
+//To typecheck the element APIs, import as below.
+import { CSelectSingleElement } from 'oj-c/select-single';
+
+//For the transpiled javascript to load the element's module, import as below
+import 'oj-c/select-single';
+```
+
+## Usage
+
+Here's how to implement a basic `oj-c-select-single`.
+
+<Canvas of={Stories.Basic}>
+  <Story of={Stories.Basic} height={350} />
+</Canvas>
+
+## Props
+
+<ArgTypes of="story" />
